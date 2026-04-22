@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+header {
+    background: #1e293b;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.tag {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 5px 5px 0 0;
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    margin-top: 40px;
+}
+
+a {
+    color: #38bdf8;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.tag {
+    background: linear-gradient(45deg, #38bdf8, #60a5fa);
+    color: black;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: rgba(30,41,59,0.9);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <img src="me.jpg" alt="Araya Sawangjang" style="
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        object-fit:cover;
+        border:3px solid #38bdf8;
+    ">
+    <h1>👨‍💻 My Portfolio</h1>
+    <p>Araya Sawangjang | Nickname : Fluke</p>
+    <p>Junior Developer | C Programming | Problem Solver</p>
+</header>
+
+<nav style="text-align:center; padding:10px;">
+    <a href="#about">About</a> |
+    <a href="#project">Project</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- ABOUT -->
+    <div class="card" id="about">
+        <h2>👤 About Me</h2>
+        <p>
+            Hello! I am a beginner programmer interested in software development and problem solving.
+            I enjoy building small projects using C language and improving my logical thinking skills.
+        </p>
+    </div>
+
+    <!-- PROJECT -->
+<div class="card" id="project">
+    <h2>💻 Project: Math Speed Game</h2>
+
+    <p>
+        A C language console game that generates random math questions
+        and calculates score based on accuracy and speed.
+    </p>
+
+    <h3>✨ Features</h3>
+    <span class="tag">Random Questions</span>
+    <span class="tag">Score System</span>
+    <span class="tag">Timer</span>
+    <span class="tag">3 Difficulty Levels</span>
+    <span class="tag">Input Validation</span>
+
+    <h3>🛠 Tech Stack</h3>
+    <span class="tag">C Language</span>
+
+    <h3>📸 Preview</h3>
+    <p>Choose your Gamemode.</p>
+    <img src="game.png"  alt="Mode Selection Screenshot"   style="width:100%; border-radius:10px; margin-top:10px;">
+    <p>How many quiz do you want?</p>
+    <img src="game1.png" alt="Number Selection Screenshot" style="width:100%; border-radius:10px; margin-top:10px;">
+    <p>Do your BEST!!</p>
+    <img src="game2.png" alt="Gameplay Screenshot"         style="width:100%; border-radius:10px; margin-top:10px;">
+    <p>And see your score.</p>
+    <img src="game3.png" alt="Total Score Screenshot"      style="width:100%; border-radius:10px; margin-top:10px;">
+</div>
+
+    <!-- SKILLS -->
+    <div class="card" id="skills">
+        <h2>📌 Skills</h2>
+        <span class="tag">C Programming</span>
+        <span class="tag">Problem Solving</span>
+        <span class="tag">Algorithm Basics</span>
+        <span class="tag">Debugging</span>
+    </div>
+
+    <div class="card">
+    <h2>🧠 What I do</h2>
+    <p>
+        I enjoy building logic-based programs and learning how systems work.
+        Currently focused on C programming and web fundamentals.
+    </p>
+</div>
+    <!-- GOALS -->
+    <div class="card">
+        <h2>🚀 Goals</h2>
+        <p>
+            - Improve programming skills<br>
+            - Build more projects<br>
+            - Learn Web Development<br>
+            - Become Software Developer
+        </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card" id="contact">
+    <h2>📞 Contact</h2>
+
+    <p>
+        GitHub: 
+        <a href="https://github.com/FlukeAraya/Math-Quiz-C-code" target="_blank">
+            🔗 View My GitHub
+        </a>
+    </p>
+
+    <p>Email: fluke041243@gmail.com</p>
+</div>
+
+</div>
+
+<footer>
+    <p>© 2026 Araya Sawangjang | My Portfolio</p>
+</footer>
+
+</body>
+</html>
